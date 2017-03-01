@@ -1,0 +1,54 @@
+.main{
+	margin:0;
+	padding:0;
+	background:url('/images/wallls.com_120998.jpg');
+	width:100%;
+	height:600px;
+}
+.form1{
+	background: rgba(255, 255, 255, 0.5);
+	position: relative;
+	padding-left:30px;
+	overflow: hidden;
+}
+#login{
+	background-color:rgba(0,0,0,0.5);
+	background:url('/images/wallls.com_118340.jpg') fixed;
+	height:700px;
+}
+#login .hd{
+	margin-bottom:40px;
+	padding:20px;
+}
+#login .hd a{
+	margin:20px;
+}
+#login .main1{ 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background: hsla(0,0%,100%,.87);
+    width: 363px;
+    padding: 45px 0;
+    border-radius: 4px;
+}
+#login .main1 input{
+	border-radius: 4px;
+	width:200px;
+	margin:10px 0;
+}
+#login .main1 .logo{
+	font-size:4em;
+	color:#3498DB;
+	text-shadow: 0 0 .1em, 0 0 .3em;
+}
+#login .main1 .subtitle{
+	font-size:.9em;
+	color:#757c80;
+	font-weight:bold;
+	line-height:14px;
+}
+#login .main1 form button{
+	margin:10px 0;
+	width:250px;
+}
