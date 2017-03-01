@@ -1,5 +1,5 @@
-	<!----nav开始------>
-	<nav class="navbar navbar-default" id="nav1" role="navigation">
+
+<nav class="navbar navbar-default" id="nav1" role="navigation">
 	<div class="container-fluid"> 
 	<div class="navbar-header">
 		<button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -20,12 +20,10 @@
 		<% }else { %>
 			<li class="active"><a href="#">Home</a></li>
 			<li class="dropdown"><a href="/posts?author=<%= user._id %>">个人主页</a></li>
-			<li class="dropdown"><a href="">发表帖子</a></li>
+			<li class="dropdown"><a href="/posts/create">发表帖子</a></li>
 			<li class="dropdown"><a href="/signout">退出登录</a></li>
 		<% } %>
 		</ul>
 	</div>
 	</div>
-	</nav>
-	<!----nav结束------>
-	<!-------------------------->
+	</nav>	

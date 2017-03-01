@@ -1,0 +1,32 @@
+<%- include('header') %>
+<div id="create">
+<%- include('components/nav') %>
+<%- include('components/notification') %>
+<div class="container">
+  <div class="row create">
+  <div class="col-md-2 ">
+  <div class="avatar1">
+    <a class="avatar2"
+       href="/posts?author=<%= user._id %>"
+       data-title="<%= user.name %> | <%= ({m: '男', f: '女', x: '保密'})[user.gender] %>">
+      <img class="avatar" src="/img/<%= user.avatar %>">
+    </a>
+	</div>
+  </div>
+  <div class="col-md-8">
+    <form class="form-horizontal" method="post" action="/posts">
+      <div class="form-group">
+        <label>标题</label>
+        <input type="text" name="title" maxlength="20">
+		<p class="help-text">（最大输入20个字）</p>
+      </div>
+      <div class="form-group">
+        <label>内容</label>
+        <textarea name="content" rows="15"></textarea>
+      </div>
+      <button type="submit" class="btn btn-info" value="发布">发表文章/评论/帖子</button>
+    </form>
+  </div>
+</div>
+</div>
+<%- include('footer') %>
