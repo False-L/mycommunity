@@ -103,3 +103,21 @@
 	-webkit-border-radius:.5em;
 	background: rgba(255,255,255,0.5);
 }
+/****************/
+.post-content{
+	background: rgba(255,255,255,0.8);
+	background:url('/images/wallls.com_115.jpg') fixed;
+}
+.post-content .col-md-2 img{
+	border:10px #aee2d9 solid;
+	height:100px; 
+	width:100px;
+	border-radius:50em;
+	-moz-border-radius:50em;
+	-webkit-border-radius:50em;
+	behavior: url(ie-css3.htc); 
+}
+.post-content .row{
+	background: rgba(255,255,255,0.8);
+	border:2px solid green;
+}
