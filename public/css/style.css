@@ -1,10 +1,7 @@
-.main{
-	margin:0;
-	padding:0;
-	background:url('/images/wallls.com_120998.jpg');
-	width:100%;
-	height:600px;
+body{
+	min-height:650px;
 }
+
 .form1{
 	background: rgba(255, 255, 255, 0.5);
 	position: relative;
@@ -49,6 +46,46 @@
 	line-height:14px;
 }
 #login .main1 form button{
+	margin:10px 0;
+	width:250px;
+}
+/***********************/
+#signup{
+	background-color:rgba(0,0,0,0.5);
+	background:url('/images/wallls.com_118340.jpg') fixed;
+	min-height:650px;
+}
+#signup .hd{
+	margin-bottom:40px;
+	padding:20px;
+}
+#signup .hd a{
+	margin:20px;
+}
+#signup .main{
+	margin:0;
+	padding:0;
+	width:100%;
+	min-height:670px;
+}
+}
+#signup .main input{
+	border-radius: 4px;
+	width:200px;
+	margin:10px 0;
+}
+#signup .main .logo{
+	font-size:4em;
+	color:#3498DB;
+	text-shadow: 0 0 .1em, 0 0 .3em;
+}
+#signup .main .subtitle{
+	font-size:.9em;
+	color:#757c80;
+	font-weight:bold;
+	line-height:14px;
+}
+#signup .main form button{
 	margin:10px 0;
 	width:250px;
 }
@@ -120,4 +157,6 @@
 .post-content .row{
 	background: rgba(255,255,255,0.8);
 	border:2px solid green;
+}
+.post-content .container{
 }

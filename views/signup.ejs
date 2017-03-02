@@ -1,40 +1,60 @@
 <%- include('header') %>
-
-<div class="ui grid">
-  <div class="four wide column"></div>
-  <div class="eight wide column">
-    <form class="ui form segment" method="post" enctype="multipart/form-data">
-      <div class="field required">
-        <label>用户名</label>
-        <input placeholder="用户名" type="text" name="name">
+<div id="signup">
+<div class="clearfix hd">
+<a href="/signin" class="btn btn-info btn-lg pull-right" role="button">登录</a>
+<a href="/posts" class="btn btn-info btn-lg pull-right" role="button">主页</a>
+</div>
+<div class="main">
+<%- include('components/notification') %>
+<div class="container">
+<div class="row signup">
+<div class="col-md-4 col-md-offset-4 col-xs-8">
+	<div class="form1">
+	<form class="form-group1" method="post" enctype="multipart/form-data">
+    <fieldset>
+	<div><h1>waterserver</h1></div>
+      <div id="legend" class="">
+        <legend class="">注册页面</legend>
       </div>
-      <div class="field required">
-        <label>密码</label>
+	  
+    <div class="form-group">
+          <label class="control-label" for="input01">用户名：</label>  
+            <input placeholder="在这里填写你的用户名" class="input-xlarge" type="text" name="name">     
+     </div>
+	<div class="form-group">
+          <label class="control-label" for="input01">邮箱：</label>
+            <input placeholder="在这里填写你的邮箱" class="input-xlarge" type="text" name="email">
+        </div>
+		
+	<div class="form-group">
+        <label class="control-label" for="input01">密码：</label>
         <input placeholder="密码" type="password" name="password">
-      </div>
-      <div class="field required">
-        <label>重复密码</label>
+     </div>
+     <div class="form-group">
+        <label class="control-label" for="input01">再次输入密码：</label>
         <input placeholder="重复密码" type="password" name="repassword">
-      </div>
-      <div class="field required">
+     </div>
+	<div class="form-group">
         <label>性别</label>
-        <select class="ui compact selection dropdown" name="gender">
+        <select class="" name="gender">
           <option value="m">男</option>
           <option value="f">女</option>
           <option value="x">保密</option>
         </select>
-      </div>
-      <div class="field required">
-        <label>头像</label>
-        <input type="file" name="avatar">
-      </div>
-      <div class="field required">
-        <label>个人简介</label>
-        <textarea name="bio" rows="5" v-model="user.bio"></textarea>
-      </div>
-      <input type="submit" class="ui button fluid" value="注册">
+      </div>		
+	<div class="form-group">
+          <label class="control-label">设置你的头像</label>      
+            <input class="input-file" id="fileInput" type="file" name="avatar">
+        </div>
+    <div class="form-group">        
+            <button class="btn btn-success btn-lg" type="submit">注册</button>
     </div>
-  </form>
-</div>
-
+    </fieldset>
+	</form>
+     </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
 <%- include('footer') %>
