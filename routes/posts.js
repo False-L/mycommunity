@@ -137,7 +137,7 @@ router.post('/:postId/comment', checkLogin, function(req, res, next) {
 });
 
 // GET /posts/:postId/comment/:commentId/remove 删除一条留言
-router.delete('/:postId/comment/:commentId', checkLogin, function(req, res, next) {
+router.GET('/:postId/comment/:commentId', checkLogin, function(req, res, next) {
   res.send(req.flash());
 });
 

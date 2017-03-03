@@ -1,25 +1,21 @@
-<div class="post-content">
-  <div class="container">
-    <div class="row">
-	<div class="col-md-2">
-      <a class="avatar"
+<div class="post-content">  	
+  <div class="media">
+	<div class="media-left media-middle">
+		<a class="avatar"
          href="/posts?author=<%= post.author._id %>"
          data-title="<%= post.author.name %> | <%= ({m: '男', f: '女', x: '保密'})[post.author.gender] %>"
          >
-        <img class="avatar" src="/img/<%= post.author.avatar %>">
-      </a>
-    </div>
-	
-      <div class="col-md-8 post-content-main">
-        <h3><a href="/posts/<%= post._id %>"><%= post.title %></a></h3>
-        <pre><%- post.content %></pre>
-        <div>
-          <span class="tag"><%= post.created_at %></span>
+        <img class="avatar media-object" src="/img/<%= post.author.avatar %>" alt="用户头像">
+		</a>
+	</div>
+	<div class="media-body">
+		<h3 class="media-heading"><a href="/posts/<%= post._id %>"><%= post.title %></a></h3>
+		<pre><%- post.content %></pre>
+		 <span class="tag"><%= post.created_at %></span>
           <span class="tag right">
             <span>浏览(<%= post.pv %>)</span>
             <span>留言(<%= post.commentsCount %>)</span>
-
-            <% if (user && post.author._id && user._id.toString() === post.author._id.toString()) { %>
+			   <% if (user && post.author._id && user._id.toString() === post.author._id.toString()) { %>
               <div class="ui inline dropdown">
                 <div class="text"></div>
                 <i class="dropdown icon"></i>
@@ -29,10 +25,7 @@
                 </div>
               </div>
             <% } %>
-
-          </span>
-        </div>
-      </div>
-    </div>
+			</span>
+	</div>	
   </div>
-</div>
+</div>                            
