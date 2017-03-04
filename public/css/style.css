@@ -169,3 +169,30 @@ body{
 	border-radius:.8em;
 	padding:1em;
 }
+/***************************/
+/*********comments**********/
+.comments-area{
+}
+.comments-area h3{
+	font-weight:bold;
+}
+.comments-area  form{
+	margin-top:40px;
+}
+.comments-area  .comment{
+	border-top:.1em #DDD solid;
+	margin-bottom:10px;
+	padding:1em;
+}
+
+.comments-area  .comment img{
+	height:60px;
+	width:60px;
+	border:2px solid #DDD;	
+}
+.comments-area  .comment .content{
+	margin-left:1em;
+}
+.comments-area  .comment .content .text{
+	margin:.1em;
+}
